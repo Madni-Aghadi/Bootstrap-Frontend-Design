@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Bootstrap Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+            width: 0.9rem;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: 
+            linear-gradient(45deg, #1386c8, #08329c);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #a4e1f9;
+            border-radius: 3rem;
+            border: 0.2rem solid transparent;
+            background-clip: content-box;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        nav,
+        nav>div {
+            font-size: 15px;
+
+        }
+
+        i {
+            color: rgb(20, 246, 171);
+        }
+
+        .container>.row>div>h3 {
+            color: rgb(4, 75, 75);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg "  data-aos="fade-down" style="background-color: rgb(235, 235, 235); height: auto; padding:0m;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-center " href="#">
+                <img src="logomy.png" height="60px" width="60px" alt="...">
+                <h5>Clashing Code Info.</h5>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 ms-3 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search" class="searche">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Carousel -->
+
+    <div id="carouselExampleCaptions" data-aos="fade-right" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img1.jpg" width="500px" height="320px" class="d-block w-100 opacity-75" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our Organisation</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img2.jpg" width="500px" height="320px" class="d-block w-100 opacity-75" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our Work</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img3.jpg" width="500px" height="320px" class="d-block opacity-75 w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our representatives</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 text-center mt-3 h5" data-aos="fade-left">
+                Read this below to know about us...
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Section -->
+    <div class="container-fluid mt-3 " data-aos="fade-left">
+        <div class="row justify-content-evenly">
+            <div class="col-md-3 me-10 text-center">
+                <h1> <i class="bi bi-person-circle"></i></h1>
+                <br>
+                <h3>App Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod molestias amet aut dolor quasi
+                    aliquam.l. </p>
+            </div>
+            <div class="col-md-3 text-center" >
+                <h1><i class="bi bi-pencil-square"></i>
+                </h1> <br>
+                <h3>Web Developer</h3></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod molestias amet aut dolor quasi aliquam.
+                    . </p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h1> <i class="bi bi-file-code-fill"></i></h1>
+                <h3 class="pt-3">Game Builder</h3>
+                <p class="d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod molestias amet aut d.
+                    Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="container-fluid" data-aos="fade-right"
+    data-aos-easing="ease-in-sine">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://www.apac-insider.com/wp-content/uploads/2022/02/Business-Growth-1.jpg"
+                    class="image-fluid" height="250px" width="290px" alt="...">
+            </div>
+
+            <div class="col-md-6">
+                <h5>UI Designer</h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                        aria-label="Default striped example" style="width: 80%" aria-valuenow="100" aria-valuemin="0"
+                        aria-valuemax="75"></div>
+                </div>
+                <h5>Web Development</h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                        aria-label="Success striped example" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <h5>SEO</h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                        aria-label="Info striped example" style="width: 80%" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="90"></div>
+                </div>
+                <h5>App Development</h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                        aria-label="Warning striped example" style="width: 96%" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <h5>Game Building</h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                        aria-label="Danger striped example" style="width: 90%" aria-valuenow="100" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Contact us -->
+    <div class="container-fluid pt-3 pb-4" data-aos="fade-left"style="background-color: rgb(226, 226, 226);">
+        <div class="row justify-content-evenly">
+            <div class="col-md-5">
+                <form style="font-size: smaller;">
+                    <div class="mb-3 pb-1">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <h6>Contact us</h6>
+                <hr>
+                <br>
+                <i class="bi bi-telephone"></i>
+                <p>923083830</p>
+                <p class="me-3">Building 132, 63 Flushing Ave, Brooklyn, NY 11205, United States</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.9240617896326!2d-73.98191102068233!3d40.697670064588735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bc8b9aac6a3%3A0x46a8cbe9769d8ac3!2sSITU%20Fabrication!5e0!3m2!1sen!2sin!4v1667232407437!5m2!1sen!2sin"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3 class="text-center" data-aos="fade-left"
+    data-aos-offset="130"
+    data-aos-duration="2000">FAQ's</h3>
+    <div class="container-fluid" data-aos="fade-left"
+    data-aos-offset="130"
+    data-aos-duration="2000">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="accordion accordion-flush border mb-5" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne" style="font-size: 13px;">
+                                #1 Who we are?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="font-size: 8px;">Placeholder content for this accordion,
+                                which is intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                first item's accordion body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo" style="font-size: 13px;">
+                                #2 can we offer a best service?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample"
+                            style="font-size: 8px;">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item  ">
+                        <h2 class="accordion-header" id="flush-headingThree" style="font-size: 13px;">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree" style="font-size: 13px;">
+                                #3 How to contact?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="font-size: 8px;">Placeholder content for this accordion,
+                                which is intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                third item's accordion body. Nothing more exciting happening here in terms of content,
+                                but just filling up the space to make it look, at least at first glance, a bit more
+                                representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid text-white" style="background-color: rgb(39, 39, 39);">
+        <div class="row justify-content-evenly"  data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+    
+        data-aos-offset="100">
+            <div class="col-md-3 pt-5">
+                <div class="img-fluid" style="text-align: center;">
+                    <img src="logomy.png" width="40px" height="40px" alt="....">
+                    <h6>Clashing Code Info.</h6>
+                </div>
+                <p style="font-size: 8px; text-align:justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Maxime voluptas recusandae quaerat minima harum! Fuga distinctio architecto ut dolores cupiditate,
+                    nostrum quisquam dolore deserunt fugiat excepturi voluptas doloribus, exercitationem dignissimos
+                    debitis temporibus, natus quaerat!
+                </p>
+            </div>
+            <div class="col-md-3 mt-3 ms-3 pb-5 pt-5" style="font-size: 13px;">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Our Service</li>
+                    <li>Our Project</li>
+                    <li>Our Team</li>
+                    <li>#2 in Development</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="col-md-3  pt-5" style="text-align: center; font-size: 10px;  margin-top: 13px;">
+                <h6>Head-Office</h6>
+                <p>133 Web tech. building,
+                    Willistion,
+                    USA-118292
+                    contact-
+                <div><i class="bi bi-telephone"></i>
+                    942048042</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center"   style="background-color:rgb(173, 171, 171);">
+        &copy All Copyrights reserved To Clashing Code INFO.
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            delay:100,
+            duration:2000,
+            offset: 50
+            }
+            );
+          </script>
+</body>
+
+</html>
